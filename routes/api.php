@@ -1,13 +1,13 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Routes;
 use App\Http\Controllers\VehiculoController;
 
 
 
-Route::get('vehiculos', [VehiculoController::class, 'index']);
-Route::get('vehiculos/{id}', [VehiculoController::class, 'show']);
-Route::post('vehiculos', [VehiculoController::class, 'store']);
-Route::put('vehiculos/{id}', [VehiculoController::class, 'update']);
-Route::delete('vehiculos/{id}', [VehiculoController::class, 'destroy']);
+Routes::get('vehiculos', [VehiculoController::class, 'index']);
+Routes::get('vehiculos/{id}', [VehiculoController::class, 'show']);
+Routes::post('vehiculos', [VehiculoController::class, 'store']);
+Routes::put('vehiculos/{id}', [VehiculoController::class, 'update']);
+Routes::delete('vehiculos/{id}', [VehiculoController::class, 'destroy']);
