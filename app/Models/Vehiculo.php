@@ -12,3 +12,4 @@ class Vehiculo extends Model
     public $timestamps = true;
     
 }
+//
